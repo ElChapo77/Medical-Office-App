@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SecondaryController">
+   <children>
+      <Label text="LOGIN AS" />
+      <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: red;">
+               <children>
+                  <Button fx:id="patientButton" layoutX="122.0" layoutY="67.0" mnemonicParsing="false" onAction="#switchToLoginPatient" text="PATIENT" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: blue;">
+               <children>
+                  <Button fx:id="doctorButton" layoutX="122.0" layoutY="67.0" mnemonicParsing="false" onAction="#switchToLoginDoctor" text="DOCTOR" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label text="OR" />
+      <Button fx:id="registerButton" mnemonicParsing="false" onAction="#switchToRegister" text="REGISTER" />
+   </children>
+</VBox>
